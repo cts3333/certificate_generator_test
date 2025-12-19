@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设备操作培训合格证生成器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>设备操作培训合格证生成器</h1>
+        
+        <div class="input-section">
+            <label for="clinicName">诊所名称：</label>
+            <input type="text" id="clinicName" placeholder="请输入诊所名称">
+            <button id="generateBtn">生成合格证</button>
+            <button id="downloadBtn" disabled>下载图片</button>
+            <div class="position-adjust">
+                <label for="namePosition">名称垂直位置：</label>
+                <input type="range" id="namePosition" min="-200" max="200" value="-17">
+                <span id="positionValue">-17</span>
+            </div>
+        </div>
+        
+        <div class="canvas-section">
+            <canvas id="certificateCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
